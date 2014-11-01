@@ -21,7 +21,7 @@ extends Game {
     private boolean play;
     
     public Spiel() {
-        super(500,500);
+        super(500,500, "Sound-Demo");
         
         //Lade den Sound ein:
         //  Sound erstellt von Michael Andonie
@@ -32,6 +32,12 @@ extends Game {
         play = true;
     }
     
+    /**
+     * Hier werden die Tastenbefehle behandelt:
+     * P-Taste: Pause-Button
+     * S-Taste: Stoppt die Wiedergabe
+     * N-Taste: Startet die Wiedergabe neu
+     */
     public void tasteReagieren(int code) {
         switch(code) {
             case Taste.P:
@@ -47,6 +53,21 @@ extends Game {
                     play = true;
                 }
                 
+                break;
+                
+            case Taste.S:
+                //Stop-Button
+                music.stop();
+                break;
+                
+            case Taste.N:
+                //Neustart-Button
+                
+                //Musik provisorisch anhalten.
+                music.stop();
+                
+                //Musik neu starten
+                music.play();
                 break;
         }
     }

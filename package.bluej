@@ -1,3 +1,25 @@
 #BlueJ package file
-#Sat Nov 01 17:25:05 CET 2014
+objectbench.height=100
+objectbench.width=353
+package.editor.height=400
+package.editor.width=560
+package.editor.x=517
+package.editor.y=61
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
 project.charset=UTF-8
+target1.editor.height=700
+target1.editor.width=900
+target1.editor.x=340
+target1.editor.y=45
+target1.height=50
+target1.name=Spiel
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.typeParameters=
+target1.width=80
+target1.x=180
+target1.y=120
